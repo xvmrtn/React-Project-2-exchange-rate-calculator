@@ -1,6 +1,6 @@
 import React from "react";
 
-function CalculatorConvert({onBtnClick}) {
+function CalculatorConvert({ onBtnClick }) {
   return (
     <div className="calculator__convert" id="calculator__convert">
       <button

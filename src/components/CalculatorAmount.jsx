@@ -1,6 +1,6 @@
 import React from "react";
 
-function CalculatorAmount({getAmount}) {
+function CalculatorAmount({ getAmount }) {
   return (
     <div className="calculator__amount" id="calculator__amount">
       <input

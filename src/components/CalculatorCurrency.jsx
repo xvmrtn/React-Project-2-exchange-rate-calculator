@@ -1,6 +1,6 @@
 import React from "react";
 
-function CalculatorCurrency({getCurrency}) {
+function CalculatorCurrency({ getCurrency }) {
   return (
     <div className="calculator__currency" id="calculator__currency">
       <select

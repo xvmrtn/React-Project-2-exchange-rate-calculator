@@ -1,7 +1,11 @@
 import React from "react";
 
-function Outcome() {
-  return <div className="outcome" id="outcome"></div>;
+function Outcome({ text }) {
+  return (
+    <div className="outcome" id="outcome">
+      <p>It's {text} PLN</p>
+    </div>
+  );
 }
 
 export default Outcome;

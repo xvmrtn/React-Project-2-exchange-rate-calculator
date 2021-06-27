@@ -58,11 +58,13 @@ class App extends Component {
         <div className="calculator" id="calculator">
           <CalculatorAmount getAmount={this.getAmount}></CalculatorAmount>
           <CalculatorCurrency
-            onBtnClick={this.exchangeAmountFn}
+            getCurrency={this.getCurrency}
           ></CalculatorCurrency>
-          <CalculatorConvert getCurrency={this.getCurrency}></CalculatorConvert>
+          <CalculatorConvert
+            onBtnClick={this.exchangeAmountFn}
+          ></CalculatorConvert>
         </div>
-        <Outcome></Outcome>
+        <Outcome text={this.state.exchangeAmount.toFixed(2)}></Outcome>
       </>
     );
   }
